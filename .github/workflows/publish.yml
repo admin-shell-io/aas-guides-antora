@@ -14,7 +14,6 @@ concurrency:
   group: github-pages
   cancel-in-progress: false
 
-# Permissions setup for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
@@ -29,10 +28,11 @@ jobs:
         ports:
           - 8000:8000
         options: --health-cmd="curl http://localhost:8000/health || exit 1" --health-interval=10s --health-timeout=5s --health-retries=3
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -45,14 +45,19 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Set Node path environment variable
+      run: echo "NODE_PATH=$(npm root --quiet -g)" >> $GITHUB_ENV
+
+    - name: Install Antora and required extensions
+      run: |
+        npm install -g @antora/cli @antora/site-generator
+        npm install @antora/lunr-extension @antora/pdf-extension
+
     - name: Setup Java
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
-
-    - name: Install Antora
-      run: npm install -g @antora/cli @antora/site-generator
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -64,12 +69,12 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y graphviz
 
     - name: Generate Site
-      run: antora antora-playbook.yml
+      run: antora --fetch antora-playbook.yml
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-        path: build/site  # Ensure this matches the output path from Antora
+        path: build/site  # Ensure this matches the Antora output path
 
     - name: Deploy to GitHub Pages
       id: deployment
