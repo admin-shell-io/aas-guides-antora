@@ -25,7 +25,10 @@ ui:
       static_files:
       - .nojekyll
   - path: .nojekyll
-    
+
+output:
+  dir: build/site
+      
 runtime:
   fetch: true
   
