@@ -46,12 +46,6 @@ jobs:
       run: |
         npm install -g @antora/cli @antora/site-generator
         npm install @antora/lunr-extension @antora/pdf-extension
-        echo "NODE_PATH=$(npm root -g)" >> $GITHUB_ENV
-
-    - name: Debug Node Modules
-      run: |
-        echo "Installed global node modules:"
-        ls "$(npm root -g)/@antora" || echo "Modules not installed correctly"
 
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -59,13 +53,22 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    - name: Install Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Install Ruby Dependencies
+      run: gem install bundler && bundle install
+
     - name: Install Graphviz
       run: sudo apt-get update && sudo apt-get install -y graphviz
 
     - name: Generate Site
       run: antora --fetch antora-playbook.yml
 
-    - name: Debug build output
+    - name: List Generated Site
       run: ls -R build/site || echo "Site not generated"
 
     - name: Upload Artifacts
