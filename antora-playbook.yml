@@ -1,0 +1,45 @@
+site:
+  title: Guides of the Asset Administration Shell
+  url: https://github.com/admin-shell-io/aas-guides-antora
+  start_page: index::index.adoc
+
+content:
+  edit_url: '{web_url}/blob/{refname}/{path}'
+  sources:
+    - url: .
+      branches:
+      - HEAD
+      start-paths:
+      - .
+    - url: https://github.com/admin-shell-io/aas-guides/tree/main/AAS_Reading_Guide
+      branches:
+      - main
+      start-paths:
+      - AAS_Reading_Guide/docs
+ui:
+  bundle:
+    url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
+    snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+  - path: .nojekyll
+    
+runtime:
+  fetch: true
+  
+antora:
+  extensions:
+  - '@antora/lunr-extension'
+  - '@antora/pdf-extension'
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    xrefstyle: short
+    kroki-server-url: http://localhost:8000
+    kroki-fetch-diagram: true
+    kroki-plantuml-include: https://raw.githubusercontent.com/admin-shell-io/aas-specs-antora/refs/heads/main/plantuml/puml-theme-idta.puml

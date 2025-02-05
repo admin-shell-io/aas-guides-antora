@@ -1,0 +1,4 @@
+Guides of the Asset Administration Shell
+
+**Welcome to the documentation site for the Guides of the Asset Administration Shell**
+
