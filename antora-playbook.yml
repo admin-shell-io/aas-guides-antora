@@ -8,17 +8,13 @@ content:
   sources:
     - url: .
       branches:
-        - HEAD
+      - HEAD
       start-paths:
-      - . 
+      - .
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
-      start_path: 
-      - AAS_Reading_Guide/docs 
-
-      
-
+      start_path: AAS_Reading_Guide/docs
 ui:
   bundle:
     url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
