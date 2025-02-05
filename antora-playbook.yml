@@ -11,7 +11,7 @@ content:
       - HEAD
       start-paths:
       - .
-    - url: https://github.com/admin-shell-io/aas-guides/tree/main/AAS_Reading_Guide
+    - url: https://github.com/admin-shell-io/aas-guides-antora
       branches:
       - main
       start-paths:
