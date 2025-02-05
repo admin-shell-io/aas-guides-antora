@@ -1,21 +1,30 @@
+#
+# Publish to GitHub Pages
+# Initially based on the instructions in Antora Docs 
+# https://docs.antora.org/antora/latest/publish-to-github-pages/
+#
+
 name: Publish Website
 
 on:
+  # Cronjob for publishing
   schedule:
-    - cron: '0 */8 * * *'
+  - cron: '0 */8 * * *'
+  # When pushes are made to the main branch
   push:
     branches: [ main ]
+  # Also manually from actions
   workflow_dispatch:
-
+  
 concurrency:
   group: github-pages
   cancel-in-progress: false
-
+  
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,57 +34,38 @@ jobs:
         ports:
           - 8000:8000
         options: --health-cmd="curl http://localhost:8000/health || exit 1" --health-interval=10s --health-timeout=5s --health-retries=3
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
     - name: Configure Pages
       uses: actions/configure-pages@v3
-
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-
-    - name: Set Node path environment variable
-      run: echo "NODE_PATH=$(npm root --quiet -g)" >> $GITHUB_ENV
-
-    - name: Install Antora and required extensions
-      run: |
-        npm install -g @antora/cli @antora/site-generator
-        npm install @antora/lunr-extension @antora/pdf-extension
-
-    - name: Setup Java
+    - name: Setup java
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
-
+    - name: Install Antora
+      run: npm i antora
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3'
         bundler-cache: true
-
     - name: Install Graphviz
-      run: sudo apt-get update && sudo apt-get install -y graphviz
-
+      run: sudo apt update && sudo apt install -y graphviz
     - name: Generate Site
-      run: antora --fetch antora-playbook.yml
-
-    - name: Debug build output
-      run: ls -R build/site || echo "Site not generated or incorrect path"
-
+      run: npx antora antora-playbook.yml
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v2
       with:
-        path: build/site  # Ensure this matches the Antora output path
-
+        path: build/site
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
