@@ -1,13 +1,10 @@
 name: Publish Website
 
 on:
-  # Cronjob for publishing
   schedule:
     - cron: '0 */8 * * *'
-  # When pushes are made to the main branch
   push:
     branches: [ main ]
-  # Manual trigger from GitHub Actions
   workflow_dispatch:
 
 concurrency:
@@ -70,6 +67,9 @@ jobs:
 
     - name: Generate Site
       run: antora --fetch antora-playbook.yml
+
+    - name: Debug build output
+      run: ls -R build/site || echo "Site not generated or incorrect path"
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
