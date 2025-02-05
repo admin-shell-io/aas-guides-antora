@@ -1,9 +1,3 @@
-#
-# Publish to GitHub Pages
-# Initially based on the instructions in Antora Docs 
-# https://docs.antora.org/antora/latest/publish-to-github-pages/
-#
-
 name: Publish Website
 
 on:
@@ -25,6 +19,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,32 +35,41 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
     - name: Configure Pages
       uses: actions/configure-pages@v3
+
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - name: Setup java
+
+    - name: Setup Java
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
+
     - name: Install Antora
       run: npm i antora
+
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3'
         bundler-cache: true
+
     - name: Install Graphviz
       run: sudo apt update && sudo apt install -y graphviz
+
     - name: Generate Site
       run: npx antora antora-playbook.yml
+
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3  # Updated to v3 to avoid deprecation issue
       with:
         path: build/site
+
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
