@@ -3,18 +3,18 @@ name: Publish Website
 on:
   # Cronjob for publishing
   schedule:
-  - cron: '0 */8 * * *'
+    - cron: '0 */8 * * *'
   # When pushes are made to the main branch
   push:
     branches: [ main ]
-  # Also manually from actions
+  # Manual trigger from GitHub Actions
   workflow_dispatch:
-  
+
 concurrency:
   group: github-pages
   cancel-in-progress: false
-  
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
+# Permissions setup for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
@@ -32,6 +32,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -51,7 +52,7 @@ jobs:
         java-version: '17'
 
     - name: Install Antora
-      run: npm i antora
+      run: npm install -g @antora/cli @antora/site-generator
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -60,15 +61,15 @@ jobs:
         bundler-cache: true
 
     - name: Install Graphviz
-      run: sudo apt update && sudo apt install -y graphviz
+      run: sudo apt-get update && sudo apt-get install -y graphviz
 
     - name: Generate Site
-      run: npx antora antora-playbook.yml
+      run: antora antora-playbook.yml
 
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v3  # Updated to v3 to avoid deprecation issue
+      uses: actions/upload-pages-artifact@v3
       with:
-        path: build/site
+        path: build/site  # Ensure this matches the output path from Antora
 
     - name: Deploy to GitHub Pages
       id: deployment
