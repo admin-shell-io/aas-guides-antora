@@ -19,6 +19,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     services:
       kroki:
         image: yuzutech/kroki
@@ -42,7 +43,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Antora and required extensions
+      - name: Install Antora and Required Extensions
         run: |
           npm install -g @antora/cli @antora/site-generator
           npm install @antora/lunr-extension @antora/pdf-extension
@@ -79,3 +80,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
