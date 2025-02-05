@@ -8,34 +8,34 @@ content:
   sources:
     - url: .
       branches:
-      - HEAD
-      start-paths:
-      - .
+        - HEAD
+      start_path: .
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
       start_path: AAS_Reading_Guide/docs
+
 ui:
   bundle:
     url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
     snapshot: true
   supplemental_files:
-  - path: ui.yml
-    contents: |
-      static_files:
-      - .nojekyll
-  - path: .nojekyll
+    - path: ui.yml
+      contents: |
+        static_files:
+        - .nojekyll
+    - path: .nojekyll
 
 output:
   dir: build/site
-      
+
 runtime:
   fetch: true
-  
+
 antora:
   extensions:
-  - '@antora/lunr-extension'
-  - '@antora/pdf-extension'
+    - '@antora/lunr-extension'
+    - '@antora/pdf-extension'
 
 asciidoc:
   extensions:
