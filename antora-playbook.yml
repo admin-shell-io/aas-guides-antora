@@ -9,11 +9,11 @@ content:
     - url: .
       branches:
         - HEAD
-      start_path: docs  # Corrected from start-paths
+      start_path: AAS_Reading_Guide/docs  
     - url: https://github.com/admin-shell-io/aas-guides-antora
       branches:
         - main
-      start_path: AAS_Reading_Guide/docs  # Corrected from start-paths
+      start_path: AAS_Reading_Guide/docs
 
 ui:
   bundle:
