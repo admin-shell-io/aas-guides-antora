@@ -1,6 +1,6 @@
 site:
   title: Guides of the Asset Administration Shell
-  url: https://github.com/admin-shell-io/aas-guides-antora
+  url: https://admin-shell-io.github.io/aas-guides
   start_page: index::index.adoc
 
 content:
