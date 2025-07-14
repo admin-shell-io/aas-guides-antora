@@ -27,6 +27,7 @@ ui:
         static_files:
         - .nojekyll
     - path: .nojekyll
+    - path: css/site-extra.css
 
 output:
   dir: build/site
