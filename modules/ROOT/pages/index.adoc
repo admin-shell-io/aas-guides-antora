@@ -2,3 +2,23 @@ Guides of the Asset Administration Shell
 
 **Welcome to the documentation site for the Guides of the Asset Administration Shell**
 
+&nbsp;
+
+:reading-guide-mainpage: AAS_Reading_Guide:ROOT:index.adoc
+:quickStart-guide-mainpage: AAS_QuickStart_Guide:ROOT:imprint.adoc
+
+
+[cols="a,a", frame="none", grid="none", align="center"]
+|===
+| image::IDTA_AAS_Reading_Guide_Title.png[xref={reading-guide-mainpage}, window=_blank, opts=nofollow, width=500, height=550]
+
+xref:{reading-guide-mainpage}[View,role="view-button"]
+
+| image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[xref={quickStart-guide-mainpage}, window=_blank, opts=nofollow, width=500, height=550]
+
+xref:{quickStart-guide-mainpage}[View,role="view-button"]
+
+|===
+
+&nbsp;
+
