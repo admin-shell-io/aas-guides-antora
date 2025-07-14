@@ -13,7 +13,7 @@ content:
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
-      start_path: 
+      start_paths: 
         - AAS_Reading_Guide/docs
         - AAS_QuickStart_Guide/docs  
 
