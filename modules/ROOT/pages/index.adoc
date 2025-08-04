@@ -10,11 +10,11 @@ Guides of the Asset Administration Shell
 
 [cols="a,a", frame="none", grid="none", align="center"]
 |===
-| image::IDTA_AAS_Reading_Guide_Title.png[xref={reading-guide-mainpage}, window=_blank, opts=nofollow, width=500, height=550]
+| image::IDTA_AAS_Reading_Guide_Title.png[xref={reading-guide-mainpage}, window=_blank, opts=nofollow, width=200, height=250]
 
 xref:{reading-guide-mainpage}[View,role="view-button"]
 
-| image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[xref={quickStart-guide-mainpage}, window=_blank, opts=nofollow, width=500, height=550]
+| image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[xref={quickStart-guide-mainpage}, window=_blank, opts=nofollow, width=200, height=250]
 
 xref:{quickStart-guide-mainpage}[View,role="view-button"]
 
