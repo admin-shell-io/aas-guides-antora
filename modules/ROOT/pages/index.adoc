@@ -18,7 +18,7 @@ image::IDTA_AAS_Reading_Guide_Title.png[xref={reading-guide-mainpage}, window=_b
 **AAS Reading Guide**
 
 [.text-center]
-xref:{reading-guide-mainpage}[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20Reading%20Guide/1.0/index.html[View,role="view-button"]
 
 | 
 [.text-center]
@@ -28,7 +28,7 @@ image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[xref={quickStart-guide-mainpage}, wi
 **AAS Quick Start Guide**
 
 [.text-center]
-xref:{quickStart-guide-mainpage}[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20Quick%20Start%20Guide/1.0/imprint.html[View,role="view-button"]
 
 |===
 
