@@ -1,56 +1,175 @@
-extends: default-for-print
+extends: default
 
 title-page:
-  text_align: left
+  text-align: left
   title:
     top: 55%
-    font_size: 24
-    font_color: C6C6C6
-    line_height: 0.9
+    font-size: 35
+    font-color: FFFFFF
+    line-height: 0.9
   subtitle:
-    font_size: 28
-    font_color: FFFFFF
-    font_style: bold_italic
-    line_height: 1
-  
- 
+    font-size: 35
+    font-color: FFFFFF
+    font-style: normal
+    line-height: 1
+  authors:
+    font-color: FFFFFF
+  revision:
+    font-color: FFFFFF
+    font-size: 20
+  background-image: image:cover.pdf[fit=cover]
+
 page:
   layout: portrait
-  margin: [0.50in, 0.79in, 0.71in, 0.79in]
   size: A4
-  
+  margin: [1in, 1in, 1in, 1in]
+
 base:
-  text_align: justify
-  border_color: EEEEEE
-  border_radius: 4
-  border_width: 0.5
-  font-color: #333333
+  text-align: justify
   font-family: Helvetica
-  font-style: Normal
   font-size: 10
-  line-height-length: 17
-  line-height: $base-line-height-length / $base-font-size
+  font-color: 333333
+  font-style: normal
+  border-color: EEEEEE
+  border-width: 0.5
+  border-radius: 4
+  line-height-length: 13
+  line-height: 1.15
+
 vertical-spacing: $base-line-height-length
 
+image:
+  align: center
+
 heading:
-  font-color: #0029CC
+  margin-top: 8
+  margin-bottom: 8
   font-size: 14
+  font-color: 0029CC
   line-height: 1.15
-  margin-bottom: $vertical-spacing
-  
+  min-height-after: auto
+  h2:
+    margin-top: 6
+    margin-bottom: 6
+    font-size: 12
+  h3:
+    margin-top: 4
+    margin-bottom: 4
+    font-size: 11
+
 link:
-  font-color: #404040
-  line-height: 1.15
-    
+  font-color: 0029CC            
+  text-decoration: underline    
+  text-decoration-color: 0029CC 
+  text-decoration-width: 1
+
 example:
-  border_radius: 0
-  border_width: 0.75
-  border_color: #e5f0f7
-  font-color: #404040
-  background_color: #e5f0f7
   padding: 12
-  
+  border-width: 0.75
+  border-color: E5F0F7
+  border-radius: 0
+  background-color: E5F0F7
+
+prose:
+  margin-bottom: 12
+  margin-inner: 12
+
+caption:
+  text-align: center
+  margin-top: 8
+  margin-bottom: 12
+
+figure-caption:
+  text-align: center
+  margin-top: 8
+  margin-bottom: 12
+
+table-caption:
+  text-align: left
+  margin-top: 8
+  margin-bottom: 12
+
+admonition:
+  margin-top: 24
+  margin-bottom: 36
+
 table:
+  margin-top: 24
+  margin-bottom: 24
+  background-color: FFFFFF
+  border-color: DDDDDD
+  border-width: 1
+  grid-color: DDDDDD
+  grid-width: 1
+  cell-padding: 6
+  font-size: 10
+  text-align: left
   head:
-    font-color: #ffffff
-    background-color: #0528cc
+    background-color: 0528CC
+    font-color: FFFFFF
+    font-style: bold
+    border-bottom-width: 1
+    text-align: left
+  body:
+    background-color: FFFFFF
+    stripe-background-color: F9F9F9
+    text-align: left
+  foot:
+    background-color: F0F0F0
+    text-align: left
+
+list:
+  margin-top: 6
+  margin-bottom: 6
+  indent: 18
+  item-spacing: 6
+
+olist:
+  marker:
+    font-family: Helvetica
+    font-size: 11
+    font-color: 0029CC
+    font-style: normal
+
+role:
+  underline:
+    text-decoration: underline
+    text-decoration-color: 0029CC
+    text-decoration-width: 1
+    font-color: 0029CC
+    font-weight: bold
+  line-through:
+    text-decoration: line-through
+  figure-caption:
+    font-style: italic
+    text-align: center
+  id:
+    font-color: 000000
+  identifier:
+    font-color: 000000
+  constraint:
+    font-color: 0029CC
+    font-style: bold
+    text-decoration: underline
+    text-decoration-color: 0029CC
+    text-decoration-width: 1
+  idta-number:
+    font-size: 20
+    font-color: FFFFFF
+    font-style: bold
+    align: left
+    margin-bottom: 8
+  spec-version:
+    font-size: 20
+    font-color: FFFFFF
+    font-style: bold
+    align: left
+    margin-top: 0
+
+codespan:
+  font-color: 000000
+  font-family: Helvetica
+
+literal:
+  font-color: 000000
+  font-family: Helvetica
