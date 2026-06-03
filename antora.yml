@@ -1,4 +1,6 @@
 name: index
-title: AAS Reading Guide
+title: AAS Guides
 version: home
 start_page: ROOT:index.adoc
+nav:
+    - modules/ROOT/nav.adoc
