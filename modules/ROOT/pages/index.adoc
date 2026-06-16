@@ -1,3 +1,13 @@
+////
+Copyright (c) 2026 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/).
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
 Guides of the Asset Administration Shell
 
 **Welcome to the documentation site for the Guides of the Asset Administration Shell**
@@ -6,9 +16,10 @@ Guides of the Asset Administration Shell
 
 :reading-guide-mainpage: AAS_Reading_Guide:ROOT:index.adoc
 :quickStart-guide-mainpage: AAS_QuickStart_Guide:ROOT:imprint.adoc
+:aas-samm-guideline-mainpage: AAS_SAMM_Guideline:ROOT:imprint.adoc
 
 
-[cols="a,a", frame="none", grid="none", align="center"]
+[cols="a,a,a", frame="none", grid="none", align="center"]
 |===
 | 
 [.text-center]
@@ -29,6 +40,17 @@ image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[width=300, height=350]
 
 [.text-center]
 link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20Quick%20Start%20Guide/1.0/imprint.html[View,role="view-button"]
+
+
+| 
+[.text-center]
+image::IDTA_AAS-SAMM-Guideline-Title.jpg[width=300, height=350]
+
+[.text-center]
+**AAS SAMM Guideline**
+
+[.text-center]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20SAMM%20Guideline/1.0/imprint.html[View,role="view-button"]
 
 |===
 
