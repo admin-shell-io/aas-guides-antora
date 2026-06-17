@@ -24,9 +24,8 @@ content:
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
-        - AAS-SAMM-Guideline_V1.0
-      start_paths: 
-        - AAS_SAMM_Guideline/documentation          
+      start_paths:
+        - AAS_SAMM_Guideline/documentation
 ui:
   bundle:
     url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
