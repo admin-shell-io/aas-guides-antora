@@ -29,7 +29,7 @@ image::IDTA_AAS_Reading_Guide_Title.png[width=300, height=350]
 **AAS Reading Guide**
 
 [.text-center]
-link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20Reading%20Guide/1.0/index.html[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Reading_Guide/1.0/index.html[View,role="view-button"]
 
 | 
 [.text-center]
@@ -39,7 +39,7 @@ image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[width=300, height=350]
 **AAS Quick Start Guide**
 
 [.text-center]
-link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20Quick%20Start%20Guide/1.0/imprint.html[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Quick_Start_Guide/1.0/imprint.html[View,role="view-button"]
 
 
 | 
@@ -50,7 +50,7 @@ image::IDTA_AAS-SAMM-Guideline-Title.jpg[width=300, height=350]
 **AAS SAMM Guideline**
 
 [.text-center]
-link:https://industrialdigitaltwin.io/aas-guides-antora/AAS%20SAMM%20Guideline/1.0/imprint.html[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_SAMM_Guideline/1.0/imprint.html[View,role="view-button"]
 
 |===
 
