@@ -52,6 +52,17 @@ image::IDTA_AAS-SAMM-Guideline-Title.jpg[width=300, height=350]
 [.text-center]
 link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_SAMM_Guideline/1.0/imprint.html[View,role="view-button"]
 
+| 
+[.text-center]
+image::IDTA_AAS_Neutral_Cover.png[width=300, height=350]
+
+[.text-center]
+**AAS Concepts**
+
+[.text-center]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Concepts/1.0/imprint.html[View,role="view-button"]
+
+
 |===
 
 &nbsp;
