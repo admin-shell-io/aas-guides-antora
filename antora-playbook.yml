@@ -16,21 +16,31 @@ content:
         - jtikekar/updateReadingGuide
       start_paths: 
         - AAS_Reading_Guide/docs
+        - AAS_Reading_Guide/*/docs
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
       start_paths: 
         - AAS_QuickStart_Guide/docs
+        - AAS_QuickStart_Guide/*/docs
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
       start_paths:
         - AAS_SAMM_Guideline/documentation
+        - AAS_SAMM_Guideline/*/documentation
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
       start_paths:
         - AAS_Concepts/docs
+        - AAS_Concepts/*/docs
+    - url: https://github.com/admin-shell-io/aas-guides
+      branches:
+        - main
+      start_paths:
+        - HowToCreateSMT/docs
+        - HowToCreateSMT/*/docs
 ui:
   bundle:
     url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
