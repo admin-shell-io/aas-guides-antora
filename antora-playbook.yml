@@ -39,7 +39,6 @@ content:
       branches:
         - main
       start_paths:
-        - HowToCreateSMT/docs
         - HowToCreateSMT/*/docs
 ui:
   bundle:
