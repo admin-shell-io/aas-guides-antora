@@ -47,8 +47,8 @@ in https://github.com/admin-shell-io/aas-guides
 ``` 
 name: HowTo_SMT
 title: 'How-To Create a SMT'
-version: '1.1 conversion in progress'
-display_version: '1.1'
+version: '1.1'
+display_version: '1.1 - in work'
 start_page: ROOT:imprint.adoc
 nav:
   - modules/ROOT/nav.adoc
@@ -56,9 +56,9 @@ nav:
 
 The *title* will be used as text in the menue (bottom left) with all the verions of the document.
 
-The *version* will be used in the menue (bottom left) as the name of the version.
+The *display_version* will be used in the menue (bottom left) as the name of the version.
 
-The *display_version* will be used in the URL.
+The *version* will be used in the URL.
 
 The *name* of all versions of the same document must be identical.
  
