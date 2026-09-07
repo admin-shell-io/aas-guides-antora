@@ -27,8 +27,7 @@ content:
       branches:
         - main
       start_paths:
-        - AAS_SAMM_Guideline/documentation
-        - AAS_SAMM_Guideline/*/documentation
+        - HowToCreateSMT/*/docs
     - url: https://github.com/admin-shell-io/aas-guides
       branches:
         - main
@@ -39,7 +38,10 @@ content:
       branches:
         - main
       start_paths:
-        - HowToCreateSMT/*/docs
+        - AAS_SAMM_Guideline/documentation
+        - AAS_SAMM_Guideline/*/documentation
+
+
 ui:
   bundle:
     url: https://github.com/admin-shell-io/aas-specs-antora-ui/releases/latest/download/ui-bundle.zip
