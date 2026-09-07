@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-4.0
 ////
 
 * xref:AAS_Reading_Guide:ROOT:index.adoc[AAS Reading Guide]
-* xref:AAS_QuickStart_Guide:ROOT:imprint.adoc[AAS Quick Start Guide]
-* xref:HowToCreateSMT/1.1.0:ROOT:imprint.adoc[How-To create SMT]
+* xref:@AAS_Quick_Start_Guide:ROOT:imprint.adoc[AAS Quick Start Guide]
+* xref:1.1@HowTo_SMT:ROOT:index.adoc[How-To create SMT]
 * xref:AAS_Concepts:ROOT:imprint.adoc[AAS Concepts]
 * xref:AAS_SAMM_Guideline:ROOT:imprint.adoc[AAS SAMM Guideline]
