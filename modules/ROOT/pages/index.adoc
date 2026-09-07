@@ -16,12 +16,17 @@ Guides of the Asset Administration Shell
 
 :reading-guide-mainpage: AAS_Reading_Guide:ROOT:index.adoc
 :quickStart-guide-mainpage: AAS_QuickStart_Guide:ROOT:imprint.adoc
+:how-to-create-smt-guideline-mainpage: HowToCreateSMT:ROOT:imprint.adoc
+:aas-concepts-mainpage: AAS_Concepts:ROOT:imprint.adoc
 :aas-samm-guideline-mainpage: AAS_SAMM_Guideline:ROOT:imprint.adoc
+
+Refer to the https://industrialdigitaltwin.org[IDTA,window=_blank] for more information on the Asset Administration Shell.
+
 
 
 [cols="a,a,a", frame="none", grid="none", align="center"]
 |===
-| 
+a| 
 [.text-center]
 image::IDTA_AAS_Reading_Guide_Title.png[width=300, height=350]
 
@@ -31,7 +36,7 @@ image::IDTA_AAS_Reading_Guide_Title.png[width=300, height=350]
 [.text-center]
 link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Reading_Guide/1.0/index.html[View,role="view-button"]
 
-| 
+a| 
 [.text-center]
 image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[width=300, height=350]
 
@@ -41,8 +46,33 @@ image::IDTA_AAS-Quick-Start-Guide-Titel.jpg[width=300, height=350]
 [.text-center]
 link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Quick_Start_Guide/1.0/imprint.html[View,role="view-button"]
 
+a| 
+[.text-center]
+image::IDTA_AAS_Neutral_Cover.png[width=300, height=350]
 
-| 
+[.text-center]
+**How to create a Submodel Template Specification**
+
+[.text-center]
+link:https://industrialdigitaltwin.io/aas-guides-antora/HowToCreateSMT/1.0/imprint.html[View,role="view-button"]
+
+|===
+
+// Second row - 2 columns
+[cols="a,a", frame="none", grid="none", align="center"]
+|===
+a| 
+[.text-center]
+image::IDTA_AAS_Neutral_Cover.png[width=300, height=350]
+
+[.text-center]
+**AAS Concepts**
+
+[.text-center]
+link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Concepts/1.0/imprint.html[View,role="view-button"]
+
+
+a| 
 [.text-center]
 image::IDTA_AAS-SAMM-Guideline-Title.jpg[width=300, height=350]
 
@@ -52,15 +82,6 @@ image::IDTA_AAS-SAMM-Guideline-Title.jpg[width=300, height=350]
 [.text-center]
 link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_SAMM_Guideline/1.0/imprint.html[View,role="view-button"]
 
-| 
-[.text-center]
-image::IDTA_AAS_Neutral_Cover.png[width=300, height=350]
-
-[.text-center]
-**AAS Concepts**
-
-[.text-center]
-link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Concepts/1.0/imprint.html[View,role="view-button"]
 
 
 |===
