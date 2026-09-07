@@ -16,7 +16,7 @@ Guides of the Asset Administration Shell
 
 :reading-guide-mainpage: AAS_Reading_Guide:ROOT:index.adoc
 :quickStart-guide-mainpage: AAS_QuickStart_Guide:ROOT:imprint.adoc
-:how-to-create-smt-guideline-mainpage: HowToCreateSMT/1.1.0:ROOT:imprint.adoc
+:how-to-create-smt-guideline-mainpage: 1.1@HowTo_SMT:ROOT:imprint.adoc
 :aas-concepts-mainpage: AAS_Concepts:ROOT:imprint.adoc
 :aas-samm-guideline-mainpage: AAS_SAMM_Guideline:ROOT:imprint.adoc
 
