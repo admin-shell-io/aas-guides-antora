@@ -16,7 +16,7 @@ Guides of the Asset Administration Shell
 
 :reading-guide-mainpage: AAS_Reading_Guide:ROOT:index.adoc
 :quickStart-guide-mainpage: AAS_QuickStart_Guide:ROOT:imprint.adoc
-:how-to-create-smt-guideline-mainpage: HowToCreateSMT:ROOT:imprint.adoc
+:how-to-create-smt-guideline-mainpage: HowToCreateSMT/1.1.0:ROOT:imprint.adoc
 :aas-concepts-mainpage: AAS_Concepts:ROOT:imprint.adoc
 :aas-samm-guideline-mainpage: AAS_SAMM_Guideline:ROOT:imprint.adoc
 
@@ -54,7 +54,7 @@ image::IDTA_AAS_Neutral_Cover.png[width=300, height=350]
 **How to create a Submodel Template Specification**
 
 [.text-center]
-link:https://industrialdigitaltwin.io/aas-guides-antora/HowToCreateSMT/1.0/imprint.html[View,role="view-button"]
+link:https://industrialdigitaltwin.io/aas-guides-antora/HowToCreateSMT/1.1/imprint.html[View,role="view-button"]
 
 |===
 
