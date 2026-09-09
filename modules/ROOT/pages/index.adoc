@@ -48,7 +48,7 @@ link:https://industrialdigitaltwin.io/aas-guides-antora/AAS_Quick_Start_Guide/1.
 
 a| 
 [.text-center]
-image::IDTA-Cover_HowToCreateASMT_1_1.png[width=300, height=350]
+image::IDTA-Cover_HowToCreateASMT.png[width=300, height=350]
 
 [.text-center]
 **How to create a Submodel Template Specification**
